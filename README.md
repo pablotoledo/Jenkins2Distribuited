@@ -14,7 +14,7 @@ Caso habitual:
 
     docker run -itd  -p 6022:22 --name=jenkins2-esclavo jtoledog/jenkins2-slave
 
-    docker run -itd --name=jenkins2-maestro --link jenkins2-esclavo -p 6080:8080 -p 6050:50000 jtoledog/jenkins2-master
+    docker run -itd --name=jenkins2-maestro --link jenkins2-esclavo -p 6080:8080 -p 6050:50000 jtoledog/jenkins2-master:scala
 
     docker run -tid --name jenkins-sonar -p 6001:9000 -p 6092:9092 jtoledog/jenkins2-master:sonar
 
