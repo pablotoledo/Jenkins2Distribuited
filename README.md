@@ -23,3 +23,9 @@ Caso habitual:
 Para obtener la IP local de algun contenedor:
 
     docker inspect CONTENEDOR | grep '"IPAddress"' | head -n 1 | awk -v x=2 '{ gsub("\"","");  gsub(",",""); print $x}'
+    
+Referencias utilizadas para Sonar:
+
+    [http://sonarqube-archive.15.x6.nabble.com/Integrating-sonar-scoverage-plugin-with-maven-td5034968.html]
+    [https://github.com/RadoBuransky/sonar-scoverage-plugin]
+    [https://docs.sonarqube.org/display/SCAN/Analyzing+with+SonarQube+Scanner+for+Maven]
