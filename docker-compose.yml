@@ -1,0 +1,21 @@
+jenkins:
+  image: jtoledog/jenkins2-master:scala
+  container_name: jenkins2-maestro
+  ports:
+    - "6080:8080"
+  links:
+    - sonar
+    - nexus
+
+sonar:
+  image: jtoledog/jenkins2-master:scala
+  container_name: jenkins2-sonarqube
+  ports:
+    - "6001:9000"
+    - "6092:9092"
+
+nexus:
+  image: jtoledog/jenkins2-master:nexus
+  container_name: jenkins2-nexus
+  ports:
+    - "6081:8081"
