@@ -23,3 +23,7 @@ Referencias utilizadas para Sonar:
     [http://sonarqube-archive.15.x6.nabble.com/Integrating-sonar-scoverage-plugin-with-maven-td5034968.html]
     [https://github.com/RadoBuransky/sonar-scoverage-plugin]
     [https://docs.sonarqube.org/display/SCAN/Analyzing+with+SonarQube+Scanner+for+Maven]
+    
+    En la carpeta de /opt/sonarqube/extensions/plugins se ha añadido:
+        https://github.com/hantuzun/sonar-scalastyle/releases/download/v0.0.1-SNAPSHOT/sonar-scalastyle-plugin-0.0.1-SNAPSHOT.jar
+        de: https://github.com/hantuzun/sonar-scalastyle/releases
