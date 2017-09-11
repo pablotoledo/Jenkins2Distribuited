@@ -8,7 +8,7 @@ jenkins:
     - nexus
 
 sonar:
-  image: jtoledog/jenkins2-master:scala
+  image: jtoledog/jenkins2-master:sonar
   container_name: jenkins2-sonarqube
   ports:
     - "6001:9000"
